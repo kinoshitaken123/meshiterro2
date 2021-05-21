@@ -5,7 +5,8 @@ class CreatePostImages < ActiveRecord::Migration[5.0]
       t.string :image_id
       t.text :caption
       t.integer :user_id
-
+      t.datetime "created_at", null: false
+      t.datetime "updated_at", null: false
       t.timestamps
     end
   end
