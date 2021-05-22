@@ -6,5 +6,7 @@ class User < ApplicationRecord
 
   has_many:post_images,dependent: :destroy
   has_many:post_commments,dependent: :destroy
+  has_many:favorites,dependent: :destroy
+  
 
 end
